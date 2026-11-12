@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 
 	counter = 1;
 
-while (counter <= 10)
+	while (counter <= 10)
 	{
 		letter = 'a';
 
