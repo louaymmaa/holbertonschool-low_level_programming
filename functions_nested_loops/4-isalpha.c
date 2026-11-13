@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - checks wither the int based represent letter in ASCII or not 
+ * _isalpha - checks wither the int based represent letter in ASCII or not
  * @c: represent the number of character based in ASCII
  *
  * Return: 1 on alphabet characters (letter), 0 otherwise
