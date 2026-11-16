@@ -30,9 +30,8 @@ void times_table(void)
 				_putchar('0' + res_ons);
 				_putchar(',');
 			       	_putchar(' ');
-			}
-			if (res_tens != 0)
 				_putchar(' ');
+			}
 			current_multiplier++;
 		}
 		if ((current_multiplier * current_multiplication_table) / 10 != 0)
