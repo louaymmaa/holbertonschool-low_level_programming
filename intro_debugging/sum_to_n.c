@@ -2,8 +2,10 @@
 /**
  * sum_to_n - sum all number from 1 to n
  * @n: number passed to have sum from 1 to it
+ * @i:work as the counter of the loop
+ * @sum: hold the summation
  *
- * Return: n
+ * Return: sum
  */
 
 int sum_to_n(int n)
@@ -14,7 +16,7 @@ int sum_to_n(int n)
     for (i = 1; i <= n; i++)
         sum += i;
 
-    return (n);
+    return (sum);
 }
 
 /* -- DO NOT Modify the code below this line -- */
