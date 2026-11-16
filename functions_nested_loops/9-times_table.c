@@ -1,50 +1,33 @@
 #include "main.h"
 /**
- * times_table - print the times table
- *
+ * times_table - prints the 9 times table, starting with 0
  */
+
 void times_table(void)
 {
-	int current_multiplier;
-       	int current_multiplication_table;
+	int row;
+	int col;
+	int result;
 
-	current_multiplication_table = 0;
-	current_multiplier = 0;
-	
-	while (current_multiplication_table < 10)
+	for (row = 0; row <= 9; row++)
 	{
-		while (current_multiplier < 9)
+		for (col = 0; col <= 9; col++)
 		{
-			int result = current_multiplier * current_multiplication_table;
-			int res_tens = result / 10;
-			int res_ons = result % 10;
-			if (res_tens != 0)
+			result = row * col;
+
+			if (col != 0)
 			{
-				_putchar('0' + res_tens);
-				_putchar('0' + res_ons);
 				_putchar(',');
 				_putchar(' ');
+				if (result < 10)
+					_putchar(' ');
 			}
-			else
-			{
-				_putchar('0' + res_ons);
-				_putchar(',');
-			       	_putchar(' ');
-				_putchar(' ');
-			}
-			current_multiplier++;
-		}
-		if ((current_multiplier * current_multiplication_table) / 10 != 0)
-		{
-			_putchar('0' + ((current_multiplier * current_multiplication_table) / 10));
-			_putchar('0' + ((current_multiplier * current_multiplication_table) % 10));
-		}
-		else
-		{
-			_putchar('0' + ((current_multiplier * current_multiplication_table) % 10));
+
+			if (result >= 10)
+				_putchar('0' + result / 10);
+
+			_putchar('0' + result % 10);
 		}
 		_putchar('\n');
-		current_multiplier = 0;
-		current_multiplication_table++;
 	}
 }
