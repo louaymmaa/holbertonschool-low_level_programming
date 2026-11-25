@@ -1,4 +1,4 @@
-# C - Pointers, arrays and strings
+## C - More pointers, arrays and strings
 
-This project covers pointers, arrays, strings,
-memory manipulation and variable scope in C.
+This project covers string concatenation, copying, comparison,
+array reversal, string capitalization and character encoding.
